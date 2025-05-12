@@ -34,9 +34,9 @@ To analyze sales and operational data across multiple dimensions (product, regio
 ## 📐 Key Metrics & DAX Measures
 
 - **Total Sales**, **Total Units**, **Gross Profit**, **Cost**
-- **Avg Delivery Days**
 - **Slicers for dynamic filtering by Year, Division, Region, Factory, and more**
 
+- **Avg Delivery Days**
   ```dax
   Avg Delivery Days = AVERAGEX(Sales, DATEDIFF(Sales[Order Date], Sales[Ship Date], DAY))
 

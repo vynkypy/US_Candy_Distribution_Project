@@ -22,10 +22,23 @@ To analyze sales and operational data across multiple dimensions (product, regio
 | `US Zips`   | U.S. ZIP code data (geo, population, timezone etc.)|
 
 ---
+## Key Highlights:
+- KPIs at a Glance: Track Total Sales, Units Sold, Profit Margins, Delivery Times, and Target Achievement in one view.
+- Sales Trends: Visualize monthly sales performance and growth trajectory across years.
+- Target vs Actual: Compare division-wise performance against strategic targets.
+- Geographical Insights: Map-based view of sales distribution and factory locations for better spatial awareness.
+- Factory Analytics: Understand which factories drive the most gross profit and product output.
+- Top Products: Dive into the best-selling and most profitable products with combined bar & line visuals
 
+---
 ## 📐 Key Metrics & DAX Measures
 
 - **Total Sales**, **Total Units**, **Gross Profit**, **Cost**
-- **Avg Delivery Days**  
+- **Avg Delivery Days**
+- **Slicers for dynamic filtering by Year, Division, Region, Factory, and more**
+
   ```dax
   Avg Delivery Days = AVERAGEX(Sales, DATEDIFF(Sales[Order Date], Sales[Ship Date], DAY))
+
+💡 ## Biggest Takeaway:
+This project was not just about building a dashboard - it was a deep learning experience in data modeling, DAX optimization, and translating raw datasets into meaningful business narratives.The biggest lesson? Good analytics isn’t just about numbers - it’s about storytelling that drives action.
